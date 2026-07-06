@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: lightskyblue;
+}
+/* ------------------canvas container---------------------------- */
+.canvas-container {
+  margin: 20px auto;
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+#canva {
+  cursor: crosshair;
+}
+/* menu--------------------------------- */
+.menu {
+  text-align: center;
+  background-color: rgb(69, 165, 198);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropbtn {
+  padding: 40px;
+  font-size: 20px;
+  width: 200px;
+  color: white;
+}
+
+.menu .dropdown:hover {
+  background-color: rgb(77, 77, 220);
+  cursor: pointer;
+}
+.cont {
+  width: 300px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #adb5b9;
+  opacity: 0.8;
+}
+
+.dropdown:hover .cont {
+  display: block;
+  cursor: pointer;
+}
+.cont .item {
+  display: block;
+  font-size: 18px;
+  padding: 25px 0 25px 0;
+}
+.cont .item:hover {
+  background-color: darkcyan;
+}
+
+/*------------------------------ whole content---------------- */
+.menu .content {
+  padding: 15px;
+  font-size: 20px;
+  width: 200px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu .content > img {
+  margin-top: 5px;
+}
+
+.menu .content > input {
+  margin-top: 5px;
+  width: 70px;
+}
+.menu .content:hover {
+  background: rgb(77, 77, 220);
+  cursor: pointer;
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+/* ----------------------download image button------------------------------------ */
+
+.button-container {
+  width: fit-content;
+  margin: 0 0 10px 10px;
+}
+#download-image {
+  padding: 5px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: #566574;
+  color: white;
+  border-radius: 5px;
+}
+
+#download-image:hover {
+  background-color: #3b4a5c;
+  cursor: pointer;
+}
