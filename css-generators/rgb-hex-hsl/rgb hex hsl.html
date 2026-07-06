@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="rgb hex hsl.css" />
+    <script src="rgb hex hsl.js" type="module"></script>
+    <title>RGB HEX HSL</title>
+  </head>
+
+  <body>
+    <section class="content">
+      <section class="colorContent">
+        <label for="color">Pick a color</label>
+        <input id="color" value="#f1eeee" type="color" />
+      </section>
+
+      <section class="Color" id="coll"></section>
+
+      <section class="values">
+        <div class="hex">
+          <span>HEX</span> <span id="Hex">#f1eeee</span
+          ><button class="copy-button">copy</button>
+        </div>
+        <div class="rgb">
+          <span>RGB</span> <span id="Rgb">rgb( 241 , 238 , 238 )</span
+          ><button class="copy-button">copy</button>
+        </div>
+        <div class="hsl">
+          <span>HSL</span><span id="hsl">hsl( 0 , 10% , 94% )</span
+          ><button class="copy-button">copy</button>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
