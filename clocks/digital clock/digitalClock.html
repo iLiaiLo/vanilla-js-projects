@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <title>digital clock</title>
+    <link
+      rel="stylesheet"
+      href="digitalClockController/clockStyles/bodyMain.css"
+    />
+    <link
+      rel="stylesheet"
+      href="digitalClockController/clockStyles/clockAndSearchBar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="digitalClockController/clockStyles/responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      href="digitalClockController/clockStyles/switchTheme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="digitalClockController/clockStyles/yearWeekMonthDay.css"
+    />
+    <link
+      rel="stylesheet"
+      href="digitalClockController/clockStyles/timeZonesStyles.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Carter+One&display=swap'"
+      rel="stylesheet"
+    />
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <script src="digitalClock.js" type="module"></script>
+  </head>
+  <body>
+    <section class="main">
+      <article>
+        <div class="weekday-container">
+          <span>Weekday:</span><span id="weekday"></span>
+        </div>
+        <div class="day-container"><span>Day:</span><span id="day"></span></div>
+        <div class="month-container">
+          <span>Month:</span><span id="month"></span>
+        </div>
+        <div class="year-container">
+          <span>Year:</span><span id="year"></span>
+        </div>
+      </article>
+      <article>
+        <div class="digital-clock"></div>
+        <div class="search-timezone">
+          <input
+            type="text"
+            class="timeZone-input"
+            placeholder="enter city or timezone..."
+          />
+          <ul class="time-zones"></ul>
+        </div>
+      </article>
+      <input type="checkbox" class="switch-theme" />
+    </section>
+  </body>
+</html>
