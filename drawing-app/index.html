@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" type="module"></script>
+    <title>drawing app</title>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="dropdown">
+        <div class="dropbtn">tools</div>
+        <div class="cont">
+          <div class="item" id="brush">brush</div>
+          <div class="item" id="triangle">trinagle</div>
+          <div class="item" id="rectangle">rectangle</div>
+          <div class="item" id="circle">circle</div>
+          <div class="item" id="line">line</div>
+        </div>
+      </div>
+
+      <div class="content">
+        thickness
+        <input id="range" value="1" type="range" min="1" /><span id="inputValue"
+          >1</span
+        >
+      </div>
+
+      <div class="content">pick a color<input type="color" id="color" /></div>
+      <div class="content" id="fill">
+        <span id="fillContentText">fill figure</span
+        ><img src="../drawing-app/assets/bucket.png" width="40" height="40" />
+      </div>
+      <div class="content" id="clear">
+        clear canva<img
+          src="../drawing-app/assets/cl.webp"
+          width="40"
+          height="40"
+        />
+      </div>
+      <div class="content" id="eraser">
+        erase<img
+          src="../drawing-app/assets/eraser.png"
+          width="40"
+          height="40"
+        />
+      </div>
+    </div>
+    <div class="canvas-container">
+      <canvas id="canva" width="1200" height="400"></canvas>
+    </div>
+    <div class="button-container">
+      <button id="download-image">download image</button>
+    </div>
+  </body>
+</html>
