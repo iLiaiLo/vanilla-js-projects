@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+  <head>
+    <title>aplikacia</title>
+    <meta
+      name="wievport"
+      charset="utf-8"
+      content="width=devise-width initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="application.css" />
+    <script src="application.js" type="module"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-filter">
+        <div class="filters">
+          <div>
+            <span> brightness: </span>
+
+            <input
+              type="range"
+              id="brightness"
+              value="100"
+              min="0"
+              max="1000"
+              name="brightness"
+            />
+          </div>
+          <div>
+            <span> contrast: </span>
+
+            <input
+              type="range"
+              id="contrast"
+              value="100"
+              min="0"
+              max="1000"
+              name="contrast"
+            />
+          </div>
+          <div>
+            <span> grayscale: </span>
+            <input
+              type="range"
+              id="grayscale"
+              value="0"
+              min="0"
+              max="100"
+              name="grayscale"
+            />
+          </div>
+          <div>
+            <span> hue-rotate: </span>
+            <input
+              type="range"
+              id="hue-rotate"
+              value="0"
+              min="0"
+              max="360"
+              name="hue-rotate"
+            />
+          </div>
+          <div>
+            <span> invert: </span>
+            <input
+              type="range"
+              id="invert"
+              value="0"
+              min="0"
+              max="100"
+              name="invert"
+            />
+          </div>
+          <div>
+            <span> opacity: </span>
+            <input
+              type="range"
+              id="opacity"
+              value="100"
+              min="0"
+              max="100"
+              name="opacity"
+            />
+          </div>
+          <div>
+            <span> saturate: </span>
+            <input
+              type="range"
+              id="saturate"
+              value="1"
+              min="0"
+              max="100"
+              name="saturate"
+            />
+          </div>
+          <div>
+            <span> sepia: </span>
+            <input
+              type="range"
+              id="sepia"
+              value="0"
+              min="0"
+              max="100"
+              name="sepia"
+            />
+          </div>
+          <div>
+            <span>blur:</span>
+            <input
+              type="range"
+              id="blur"
+              step="0.5"
+              value="0"
+              min="0"
+              max="20"
+              name="blur"
+            />
+          </div>
+        </div>
+        <div class="reset-filter">
+          <button type="button" class="filterReset">reset</button>
+        </div>
+      </div>
+      <div class="image-container">
+        <div class="image">
+          <img id="photo" src="assets/natureer.jpg" alt="nature" />
+        </div>
+
+        <div class="code-container">
+          <div class="get-code"></div>
+          <button class="copy-button">copy</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
